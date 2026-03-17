@@ -28,8 +28,3 @@ Simple frontend project for the internship assignment.
 2. Fill the form and click **Submit**.
 3. See submission list below the form.
 
-## Optional improvements (agar time ho)
-- Add edit entry capability
-- Export all entries to JSON/download file
-- Dark mode toggle
-- Server API for persistence (Node.js/Python backend)
