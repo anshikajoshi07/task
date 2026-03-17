@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Web Dev Internship Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class='navbar'>
+    <div class='navbar-title'>
+      <span>🌟 Internship Task Panel</span>
+    </div>
+    <div class='navbar-actions'>
+      <button id='cancelEditBtn' type='button' style='display:none;'>Cancel Edit</button>
+      <button id='exportJsonBtn' type='button'>Export JSON</button>
+      <label class='dark-mode-switch'>
+        <input type='checkbox' id='darkModeToggle'>
+        <span class='icon'>🌙</span>
+        <span class='text'>Dark mode</span>
+      </label>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='card'>
+      <h1>Web Development Internship Task</h1>
+      <form id='internshipForm'>
+        <label for='fullName'>Full Name</label>
+        <input type='text' id='fullName' name='fullName' required>
+
+        <label for='email'>Email</label>
+        <input type='email' id='email' name='email' required>
+
+        <label for='phone'>Phone Number</label>
+        <input type='tel' id='phone' name='phone' required placeholder='10 digit number'>
+
+        <label for='portfolio'>Portfolio / GitHub URL</label>
+        <input type='url' id='portfolio' name='portfolio' placeholder='https://'>
+
+        <label for='taskDetails'>Task Details / Completed Points</label>
+        <textarea id='taskDetails' name='taskDetails' required></textarea>
+
+        <button type='submit'>Submit</button>
+      </form>
+      <p id='resultMessage' class='message'></p>
+    </div>
+
+    <div class='card' style='margin-top: 20px;'>
+      <h2>Submitted Entries</h2>
+      <div id='entries'></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
